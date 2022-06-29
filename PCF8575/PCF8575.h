@@ -15,7 +15,7 @@ Revision 1.1
 #define PCF8575_H
 #include <Wire.h>
 
-const uint8_t LIB_VER[] = "1.1";
+#define PCF8575_LIB_VER "1.1"
 
 #ifndef ON
 #define ON 1
@@ -38,7 +38,7 @@ class PCF8575
 		void    pinMode(uint8_t pin, uint8_t mode);
 		void    digitalWrite(uint8_t pin, uint8_t state);
 		uint8_t digitalRead(uint8_t pin);
-	protected:
+	private:
 		TwoWire* _wire;
 		uint8_t _address;
 		uint16_t _dataOUTBuffer, _dataINBuffer, _modeBuffer;
