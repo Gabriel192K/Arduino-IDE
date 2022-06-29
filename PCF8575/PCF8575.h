@@ -44,5 +44,4 @@ class PCF8575
 		uint16_t _dataOUTBuffer, _dataINBuffer, _modeBuffer;
 };
 
-
 #endif
